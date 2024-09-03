@@ -1,3 +1,6 @@
+body {
+  font-family: Handjet, 'Courier New', Courier, monospace;
+}
 .list-style {
   list-style-type: none;
   padding: 0;
@@ -10,10 +13,15 @@
 
 .header {
   gap: 10px;
-  font-size: 18px;
+  font-size: 25px;
 }
 
 .page-center {
   display: flex;
   justify-content: center;
+}
+
+h1 {
+  font-size: 45px;
+  margin: 15px;
 }
