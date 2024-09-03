@@ -9,8 +9,11 @@
 }
 
 .header {
-  display: flex;
-  justify-content: center;
   gap: 10px;
   font-size: 18px;
+}
+
+.page-center {
+  display: flex;
+  justify-content: center;
 }
