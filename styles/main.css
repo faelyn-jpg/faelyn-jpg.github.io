@@ -25,3 +25,9 @@ h1 {
   font-size: 45px;
   margin: 15px;
 }
+
+.content-container {
+  display: flex;
+  background-color: lightgray;
+  height: 100px;
+}
