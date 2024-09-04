@@ -26,7 +26,7 @@ a {
 .header-name {
   font-size: 40px;
 }
-.header-container {
+#header {
   display: flex;
   justify-content: space-around;
   background-color: rgb(146, 75, 75);
@@ -62,7 +62,7 @@ h2 {
   padding: 10px;
 }
 
-.footer {
+#footer {
   display: flex;
   background-color: darkgray;
   justify-content: center;
