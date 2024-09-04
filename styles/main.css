@@ -26,14 +26,6 @@ a {
 .header-name {
   font-size: 40px;
 }
-@media only screen and (max-width: 580px) {
-  .header-item {
-    font-size: 20px;
-  }
-  .header-name {
-    font-size: 30px;
-  }
-}
 .header-container {
   display: flex;
   justify-content: space-around;
@@ -49,13 +41,16 @@ a {
 .container {
   display: flex;
   background-color: lightgrey;
-  height: 100vh;
+}
+h2 {
+  margin: 10px 0px 10px 0px;
 }
 .hero-container {
   display: flex;
   background-color: rgb(224, 190, 186);
   flex: 1 1 auto;
   justify-content: center;
+  align-items: center;
 }
 .hero-content {
   display: flex;
@@ -73,9 +68,15 @@ a {
   justify-content: center;
   align-items: center;
   height: 50px;
+  text-decoration: underline;
+  color: rgb(37, 22, 22);
 }
 .info-container {
   display: flex;
+  background-color: rgb(255, 213, 213);
+  height: 440px;
+  flex: 1 1 auto;
+  height: 100vh;
 }
 
 img {
@@ -84,4 +85,25 @@ img {
   border: 3px solid rgb(146, 75, 75);
   border-radius: 30%;
   margin: 5px;
+}
+@media only screen and (max-width: 580px) {
+  .header-container {
+    flex-direction: column;
+  }
+  .header-item {
+    font-size: 20px;
+    margin: 5px 5px 5px 5px;
+  }
+  .header-name {
+    font-size: 30px;
+  }
+  .hero-container {
+    flex-direction: column;
+  }
+  .hero-content {
+    padding: 0;
+  }
+  img {
+    align-self: center;
+  }
 }
