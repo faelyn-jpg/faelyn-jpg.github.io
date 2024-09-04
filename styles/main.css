@@ -1,5 +1,9 @@
 body {
   font-family: Handjet, 'Courier New', Courier, monospace;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
 }
 .list-style {
   list-style-type: none;
@@ -11,9 +15,31 @@ body {
   text-decoration: none;
 }
 
-.header {
+.header-item {
+  display: flex;
+  margin: 10px 30px 10px 30px;
   gap: 10px;
   font-size: 25px;
+}
+.header-name {
+  font-size: 40px;
+}
+@media only screen and (max-width: 580px) {
+  .header-item {
+    font-size: 15px;
+  }
+  .header-name {
+    font-size: 30px;
+  }
+}
+.header-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+  background-color: aqua;
+  align-items: center;
+  flex: 1 1 auto;
+  gap: 10px;
 }
 
 .page-center {
@@ -21,13 +47,9 @@ body {
   justify-content: center;
 }
 
-h1 {
-  font-size: 45px;
-  margin: 15px;
-}
-
 .content-container {
-  display: flex;
   background-color: lightgray;
   height: 100px;
+  width: 550px;
+  display: flex;
 }
