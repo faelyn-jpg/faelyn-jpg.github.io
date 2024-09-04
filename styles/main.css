@@ -103,6 +103,38 @@ img {
   font-size: 20px;
   text-align: center;
 }
+
+.cta-content {
+  display: flex;
+  flex: 1 1 auto;
+  max-height: 140px;
+  max-width: 340px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgb(146, 75, 75);
+}
+
+.cta-box {
+  display: flex;
+  width: 330px;
+  margin: 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cta-bold {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.cta-button {
+  align-self: flex-end;
+  border: 2px solid #350505;
+  padding: 5px 25px;
+  border-radius: 5px;
+}
+
 @media only screen and (max-width: 580px) {
   .header-container {
     flex-direction: column;
