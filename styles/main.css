@@ -207,6 +207,10 @@ img {
   font-size: larger;
 }
 
+.last-para {
+  margin-bottom: 10px;
+}
+
 @media only screen and (max-width: 580px) {
   .header-container {
     flex-direction: column;
