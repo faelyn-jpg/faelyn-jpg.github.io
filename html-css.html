@@ -13,6 +13,7 @@
     <title>Technical Blog: Class VS ID Selectors</title>
   </head>
   <body>
+    <a id="top-of-page"></a>
     <div id="header">
       <a href="index.html">
         <h1 class="header-name header-item">Kodi's Blog</h1>
@@ -52,17 +53,23 @@
         an ID for an element tells us that it is a single instance on your page.
         For example, you could use an ID to target your 'footer' element, as
         generally you would only have one of these on a page.
-      </div>
-      <pre class="code-example">
+        <pre class="code-example">
   <span class="code-tag"><<span class="code-name">div </span><span class="code-attr">id</span>=<span class="code-string">"footer"</span>></span>
 </pre>
+      </div>
+
       <h2 class="heading-style">Class Selector for Repeated Elements.</h2>
       <div class="blog-container">
         Class selectors are used for selecting almost every other element on a
         web page. You can have multiple different class selectors on an element
         or number of elements, you might want to style multiple of the same type
         of element at once, and class selectors are the appropriate selector for
-        this use.
+        this use. For example, on this web page, I used the same class selectors
+        to style the container this paragraph is in, and all of the other
+        paragraphs too.
+        <pre class="code-example">
+          <span class="code-tag"><<span class="code-name">div </span> <span class="code-attr">class</span>=<span class="code-string">"blog-container"</span>></span>
+        </pre>
       </div>
       <h2 class="heading-style">ID selector specificity.</h2>
       <div class="blog-container">
@@ -80,6 +87,10 @@
         to create a button that lets you go back to the top of your website.
         This can add a level of responsivness to your website to make the user
         experience easier.
+        <div class="para-break">Try clicking "Back to Top" for an example.</div>
+        <pre class="code-example">
+          <span class="code-tag"><<span class="code-name">div </span> <span class="code-attr">id</span>=<span class="code-string">"top-of-page"</span>><a href="#top-of-page">Back to Top</a>&#60;&#92;<span class="code-name">div</span>></span>
+        </pre>
       </div>
     </div>
   </body>
