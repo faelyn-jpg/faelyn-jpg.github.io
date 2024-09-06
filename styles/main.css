@@ -277,7 +277,12 @@ img {
 }
 @media (max-width: 500px) {
   .dropdown-content {
-    min-width: 70px;
-    max-width: 75px;
+    margin-top: 5px;
+    font-size: 18px;
+    min-width: 68px;
+    max-width: 74px;
+  }
+  .dropdown-content a {
+    border: 2px solid rgb(224, 190, 186);
   }
 }
