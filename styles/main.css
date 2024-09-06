@@ -149,7 +149,7 @@ img {
   flex-direction: column;
   background-color: rgb(255, 240, 240);
   border: 2px dotted rgb(226, 191, 191);
-  padding: 15px;
+  padding: 10px;
   border-radius: 15px;
   text-align: center;
   align-items: center;
@@ -273,5 +273,11 @@ img {
   }
   img {
     align-self: center;
+  }
+}
+@media (max-width: 500px) {
+  .dropdown-content {
+    min-width: 70px;
+    max-width: 75px;
   }
 }
