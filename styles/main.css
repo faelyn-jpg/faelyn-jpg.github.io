@@ -121,8 +121,7 @@ h2 {
   align-items: center;
   flex-direction: column;
 }
-.info-container,
-.main-page {
+#add-space {
   min-height: 70vh;
 }
 
