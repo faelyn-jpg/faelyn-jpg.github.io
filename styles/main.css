@@ -34,6 +34,47 @@ a {
   flex: 3 1 0;
 }
 
+.dropbtn {
+  background-color: rgb(146, 75, 75);
+  border: none;
+  min-height: 23px;
+  padding: 0;
+  font-size: 25px;
+  font-family: Handjet, 'Courier New', Courier, monospace;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(255, 240, 240);
+  opacity: 85%;
+  min-width: 125px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  padding: 6px 8px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(226, 191, 191);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: rgb(126, 68, 68);
+}
+
 .page-center {
   display: flex;
   justify-content: center;
@@ -211,7 +252,7 @@ img {
 }
 
 @media only screen and (max-width: 580px) {
-  .header-container {
+  #header {
     flex-direction: column;
   }
   .header-item {
@@ -220,6 +261,9 @@ img {
   }
   .header-name {
     font-size: 30px;
+  }
+  .dropbtn {
+    font-size: 20px;
   }
   .hero-container {
     flex-direction: column;
