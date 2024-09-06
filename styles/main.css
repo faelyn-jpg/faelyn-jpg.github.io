@@ -5,6 +5,7 @@ body {
   margin: 0;
   padding: 0;
   justify-content: space-between;
+  background-color: rgb(255, 213, 213);
 }
 .list-style {
   list-style-type: none;
@@ -107,6 +108,7 @@ h2 {
   display: flex;
   background-color: darkgray;
   justify-content: center;
+  margin-top: 10px;
   align-items: center;
   height: 50px;
   text-decoration: underline;
@@ -118,6 +120,10 @@ h2 {
   min-height: 100vh;
   align-items: center;
   flex-direction: column;
+}
+.info-container,
+.main-page {
+  min-height: 70vh;
 }
 
 img {
