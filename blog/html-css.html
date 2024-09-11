@@ -1,108 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="../styles/main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Technical Blog: Class VS ID Selectors</title>
-  </head>
-  <body>
-    <a id="top-of-page"></a>
-    <div id="header">
-      <a href="../index.html">
-        <h1 class="header-name header-item">Kodi's Blog</h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="../styles/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Technical Blog: Class VS ID Selectors</title>
+</head>
+
+<body>
+  <a id="top-of-page"></a>
+  <div id="header">
+    <a href="../index.html">
+      <h1 class="header-name header-item">Kodi's Blog</h1>
+    </a>
+    <ul class="header-item page-center list-style">
+      <li class="dropdown">
+        <button class="dropbtn">Technical Blog</button>
+        <div class="dropdown-content">
+          <a href="html-css.html">Class VS ID Selectors</a>
+          <a href="javascript-dom.html">JS Fundamentals</a>
+          <a href="#">Link 3</a>
+        </div>
+      </li>
+      <a href="te-houtaewa-template.html">
+        <li>Te Houtaewa</li>
       </a>
-      <ul class="header-item page-center list-style">
-        <li class="dropdown">
-          <button class="dropbtn">Technical Blog</button>
-          <div class="dropdown-content">
-            <a href="html-css.html">Class VS ID Selectors</a>
-            <a href="javascript-dom.html">JS Fundamentals</a>
-            <a href="#">Link 3</a>
-          </div>
-        </li>
-        <a
-          href="te-houtaewa-template.html"
-          ><li>Te Houtaewa</li>
-        </a>
-        <a
-          class="link-style"
-          href="https://github.com/faelyn-jpg"
-          target="_blank"
-          rel="noopener noreferrer"
-          ><li>GitHub</li></a
-        >
-        <li class="dropdown">
-          <button class="dropbtn">Core Blog</button>
-          <div class="dropdown-content">
-            <a href="identity-values.html">Identity, Values, and Strengths</a>
-            <a href="learning-plan.html">Learning Plan</a>
-            <a href="emotional-intelligence.html">Emotional Intelligence</a></li>
-      </ul>
+      <a class="link-style" href="https://github.com/faelyn-jpg" target="_blank" rel="noopener noreferrer">
+        <li>GitHub</li>
+      </a>
+      <li class="dropdown">
+        <button class="dropbtn">Core Blog</button>
+        <div class="dropdown-content">
+          <a href="identity-values.html">Identity, Values, and Strengths</a>
+          <a href="learning-plan.html">Learning Plan</a>
+          <a href="emotional-intelligence.html">Emotional Intelligence</a>
+      </li>
+    </ul>
+  </div>
+  <div class="info-container blog-style">
+    <h2 class="heading-style">
+      CSS Class vs ID Selectors: What's the best practice for using Class vs
+      ID selectors?
+    </h2>
+    <div class="blog-container">
+      Both Class and ID selectors are used to select an element on your web
+      page for styling, applying CSS to the element to make it look how you
+      would like it to. But which one should you use?
     </div>
-    <div class="info-container blog-style">
-      <h2 class="heading-style">
-        CSS Class vs ID Selectors: What's the best practice for using Class vs
-        ID selectors?
-      </h2>
-      <div class="blog-container">
-        Both Class and ID selectors are used to select an element on your web
-        page for styling, applying CSS to the element to make it look how you
-        would like it to. But which one should you use?
-      </div>
-      <h2 class="heading-style">ID Selector for Unique Elements.</h2>
-      <div class="blog-container">
-        ID selectors should only have a single instance on an element on your
-        web page. This is probably the most important rule for IDs in CSS, using
-        an ID for an element tells us that it is a single instance on your page.
-        For example, you could use an ID to target your 'footer' element, as
-        generally you would only have one of these on a page.
-        <pre class="code-example">
+    <h2 class="heading-style">ID Selector for Unique Elements.</h2>
+    <div class="blog-container">
+      ID selectors should only have a single instance on an element on your
+      web page. This is probably the most important rule for IDs in CSS, using
+      an ID for an element tells us that it is a single instance on your page.
+      For example, you could use an ID to target your 'footer' element, as
+      generally you would only have one of these on a page.
+      <pre class="code-example">
   <span class="code-tag"><<span class="code-name">div </span><span class="code-attr">id</span>=<span class="code-string">"footer"</span>></span>
 </pre>
-      </div>
+    </div>
 
-      <h2 class="heading-style">Class Selector for Repeated Elements.</h2>
-      <div class="blog-container">
-        Class selectors are used for selecting almost every other element on a
-        web page. You can have multiple different class selectors on an element
-        or number of elements, you might want to style multiple of the same type
-        of element at once, and class selectors are the appropriate selector for
-        this use. For example, on this web page, I used the same class selectors
-        to style the container this paragraph is in, and all of the other
-        paragraphs too.
-        <pre class="code-example">
+    <h2 class="heading-style">Class Selector for Repeated Elements.</h2>
+    <div class="blog-container">
+      Class selectors are used for selecting almost every other element on a
+      web page. You can have multiple different class selectors on an element
+      or number of elements, you might want to style multiple of the same type
+      of element at once, and class selectors are the appropriate selector for
+      this use. For example, on this web page, I used the same class selectors
+      to style the container this paragraph is in, and all of the other
+      paragraphs too.
+      <pre class="code-example">
           <span class="code-tag"><<span class="code-name">div </span> <span class="code-attr">class</span>=<span class="code-string">"blog-container"</span>></span>
         </pre>
-      </div>
-      <h2 class="heading-style">ID selector specificity.</h2>
-      <div class="blog-container">
-        ID selectors are almost the most specific kind of selector in CSS. If an
-        element contains an ID selector, the CSS rules applied to the particular
-        ID selector should get applied to the element over other conflicting
-        rules applied by class selectors. This can be helpful for intentionally
-        overriding other rules being applied to the element you're targetting.
-      </div>
-      <h2 class="heading-style">ID Selectors for Responsive Websites.</h2>
-      <div class="blog-container last-para">
-        The use of specificity in a website can be very important in a number of
-        different scenarios, including responsiveness to your website. Single
-        use selectors can be used for internal links, for example, if you wanted
-        to create a button that lets you go back to the top of your website.
-        This can add a level of responsivness to your website to make the user
-        experience easier.
-        <div class="para-break">Try clicking "Back to Top" for an example.</div>
-        <pre class="code-example">
+    </div>
+    <h2 class="heading-style">ID selector specificity.</h2>
+    <div class="blog-container">
+      ID selectors are almost the most specific kind of selector in CSS. If an
+      element contains an ID selector, the CSS rules applied to the particular
+      ID selector should get applied to the element over other conflicting
+      rules applied by class selectors. This can be helpful for intentionally
+      overriding other rules being applied to the element you're targetting.
+    </div>
+    <h2 class="heading-style">ID Selectors for Responsive Websites.</h2>
+    <div class="blog-container last-para">
+      The use of specificity in a website can be very important in a number of
+      different scenarios, including responsiveness to your website. Single
+      use selectors can be used for internal links, for example, if you wanted
+      to create a button that lets you go back to the top of your website.
+      This can add a level of responsivness to your website to make the user
+      experience easier.
+      <div class="para-break">Try clicking "Back to Top" for an example.</div>
+      <pre class="code-example">
           <span class="code-tag"><<span class="code-name">a </span> <span class="code-attr">id</span>=<span class="code-string">"top-of-page"</span>><a href="#top-of-page">Back to Top</a>&#60;&#92;<span class="code-name">a</span>></span>
         </pre>
-      </div>
     </div>
-    <div id="footer">faelyn-jpg 2024</div>
-  </body>
+  </div>
+  <div id="footer">faelyn-jpg 2024</div>
+</body>
+
 </html>
