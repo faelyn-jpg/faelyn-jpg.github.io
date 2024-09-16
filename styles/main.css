@@ -211,6 +211,10 @@ h2 {
   font-weight: 600;
   max-width: 660px;
 }
+.underlined {
+  text-decoration: underline;
+}
+
 .blog-container {
   display: flex;
   flex-direction: column;
